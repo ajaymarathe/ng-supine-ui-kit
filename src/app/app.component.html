@@ -1,37 +1,273 @@
-<base-navbar>
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!-- first section -->
+<div class="first-section bg-primary">
+  <base-navbar class="navbar-transparent" bgType="dark">
+    <a class="navbar-brand" href="#">
+      <ng-fontawesome icon="leaf" size="1"></ng-fontawesome>
+      Supine
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Components </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Examples </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-outline-light btn-sm" href="#">Download </a>
+        </li>
+      </ul>
+    </div>
+  </base-navbar>
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="height: 100vh;">
+      <div class="col-md-8">
+        <div class="intro text-center">
+          <h3 class="text-white">
+            <ng-fontawesome icon="leaf"></ng-fontawesome>
+            Ng-Supine
+          </h3>
+          <p class="lead">A beautiful Design System for Angular Lovers based on bootstrap 4.3. It's Free and Open
+            Source.</p>
+          <div>
+            <button class="btn btn-outline-secondary">
+              <ng-fontawesome icon="download"></ng-fontawesome>
+              Download
+            </button>
+            <button class="btn btn-outline-light" style="width:137px;">
+              <ng-fontawesome icon="github"></ng-fontawesome>
+              Github
+            </button>
+          </div>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+      </div>
+    </div>
   </div>
-</base-navbar>
+</div>
+<!-- second section -->
+<div class="second-section">
+  <div class="mb-5">
+    <h3 class="mb-4 container">Basic Elements</h3>
+    <h5 class="mb-4 container">Navbar</h5>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="primary">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="secondary">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="success">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <ng-fontawesome icon="github" size="1.3"></ng-fontawesome>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <ng-fontawesome icon="facebook" size="1.3"></ng-fontawesome>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <ng-fontawesome icon="instagram" size="1.3"></ng-fontawesome>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <ng-fontawesome icon="google" size="1.3"></ng-fontawesome>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="danger">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="warning">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="info">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="light" bgColor="light">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+    <div class="mb-3">
+      <base-navbar size="3" bgType="dark" bgColor="dark">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <ng-fontawesome class="mr-2" icon="github" size="1.3"></ng-fontawesome>
+                  Github
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <ng-fontawesome class="mr-2" icon="facebook" size="1.3"></ng-fontawesome>
+                  Facebook
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <ng-fontawesome class="mr-2" icon="instagram" size="1.3"></ng-fontawesome>
+                  Instagram
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <ng-fontawesome class="mr-2" icon="google" size="1.3"></ng-fontawesome>
+                  Google
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </base-navbar>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <h5 class="mb-4">cards</h5>
+          
+      </div>
+    </div>
+  </div>
+</div>
