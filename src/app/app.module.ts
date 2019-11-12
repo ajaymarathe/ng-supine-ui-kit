@@ -15,6 +15,7 @@ import { BaseDropdownMenuComponent } from './components/base-dropdown/base-dropd
 import { BaseCarouselComponent } from './components/base-carousel/base-carousel.component';
 import { BaseCarouselIndicatorComponent } from './components/base-carousel/base-carousel-indicator/base-carousel-indicator.component';
 import { BaseCarouselInnerComponent } from './components/base-carousel/base-carousel-inner/base-carousel-inner.component';
+import { BaseSlideIndicatorComponent } from './components/base-carousel/base-slide-indicator/base-slide-indicator.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BaseCarouselInnerComponent } from './components/base-carousel/base-caro
     BaseDropdownMenuComponent,
     BaseCarouselComponent,
     BaseCarouselIndicatorComponent,
-    BaseCarouselInnerComponent
+    BaseCarouselInnerComponent,
+    BaseSlideIndicatorComponent
   ],
   imports: [
     BrowserModule,
