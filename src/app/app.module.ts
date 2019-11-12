@@ -16,6 +16,8 @@ import { BaseCarouselComponent } from './components/base-carousel/base-carousel.
 import { BaseCarouselIndicatorComponent } from './components/base-carousel/base-carousel-indicator/base-carousel-indicator.component';
 import { BaseCarouselInnerComponent } from './components/base-carousel/base-carousel-inner/base-carousel-inner.component';
 import { BaseSlideIndicatorComponent } from './components/base-carousel/base-slide-indicator/base-slide-indicator.component';
+import { BaseCarouselCaptionComponent } from './components/base-carousel/base-carousel-caption/base-carousel-caption.component';
+import { BaseProgressComponent } from './components/base-progress/base-progress.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { BaseSlideIndicatorComponent } from './components/base-carousel/base-sli
     BaseCarouselComponent,
     BaseCarouselIndicatorComponent,
     BaseCarouselInnerComponent,
-    BaseSlideIndicatorComponent
+    BaseSlideIndicatorComponent,
+    BaseCarouselCaptionComponent,
+    BaseProgressComponent
   ],
   imports: [
     BrowserModule,

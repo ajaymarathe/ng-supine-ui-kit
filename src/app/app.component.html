@@ -500,8 +500,8 @@
                 </base-dropdown-menu>
               </base-dropdown>
             </div>
-            <h5 class="mb-4">Carousel</h5>
-            <div class="row">
+            <h4 class="mb-4">Carousel</h4>
+            <div class="row mb-5">
               <div class="col-md-6">
                 <base-carousel target="carouselExampleControls">
                   <ol class="carousel-indicators" >
@@ -525,7 +525,56 @@
                 </base-carousel>
               </div>
               <div class="col-md-6">
-<!--                <base-carousel></base-carousel>-->
+                <base-carousel target="secondCarousel">
+                  <ol class="carousel-indicators" >
+                    <base-slide-indicator target="secondCarousel" index="0"></base-slide-indicator>
+                    <base-slide-indicator target="secondCarousel" index="1"></base-slide-indicator>
+                    <base-slide-indicator target="secondCarousel" index="2"></base-slide-indicator>
+                  </ol>
+                  <base-carousel-inner >
+                    <div class="carousel-item active">
+                      <img src="../../../assets/img/girl.jpg" class="d-block w-100" alt="...">
+                      <base-carousel-caption>
+                        <h5 class="text-white">First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </base-carousel-caption>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../../assets/img/green.jpg" class="d-block w-100" alt="...">
+                      <base-carousel-caption>
+                        <h5 class="text-white">Second slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </base-carousel-caption>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/img/girl2.jpg" class="d-block w-100" alt="...">
+                      <base-carousel-caption>
+                        <h5 class="text-white">Third slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </base-carousel-caption>
+                    </div>
+                  </base-carousel-inner>
+                  <base-carousel-indicator slide="next" target="secondCarousel"></base-carousel-indicator>
+                  <base-carousel-indicator slide="prev" target="secondCarousel"></base-carousel-indicator>
+                </base-carousel>
+              </div>
+            </div>
+            <div class="mb-5">
+            <h4 class="mb-4">Progress bar</h4>
+              <div class="mb-2">
+                <base-progress width="20" height="0.2" ></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="info" width="30" height="0.5" ></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
               </div>
             </div>
           </div>
