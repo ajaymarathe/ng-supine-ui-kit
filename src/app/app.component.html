@@ -560,22 +560,201 @@
               </div>
             </div>
             <div class="mb-5">
-            <h4 class="mb-4">Progress bar</h4>
-              <div class="mb-2">
-                <base-progress width="20" height="0.2" ></base-progress>
+              <h4 class="mb-4">Progress bar</h4>
+                <div class="mb-2">
+                  <base-progress width="20" height="0.2" ></base-progress>
+                </div>
+                <div class="mb-2">
+                  <base-progress color="info" width="30" height="0.5" ></base-progress>
+                </div>
+                <div class="mb-2">
+                  <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
+                </div>
+                <div class="mb-2">
+                  <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
+                </div>
+                <div class="mb-2">
+                  <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
+                </div>
               </div>
-              <div class="mb-2">
-                <base-progress color="info" width="30" height="0.5" ></base-progress>
+            <div class="mb-5">
+              <h4 class="mb-4">Spinner</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="mb-4">Border</h5>
+                  <base-spinner type="border" color="primary" size="3"></base-spinner>
+                  <base-spinner type="border" color="secondary" size="3"></base-spinner>
+                  <base-spinner type="border" color="success" size="3"></base-spinner>
+                  <base-spinner type="border" color="danger" size="3"></base-spinner>
+                  <base-spinner type="border" color="warning" size="3"></base-spinner>
+                  <base-spinner type="border" color="info" size="3"></base-spinner>
+                  <base-spinner type="border" color="light" size="3"></base-spinner>
+                  <base-spinner type="border" color="dark" size="3"></base-spinner>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="mb-4">grow</h5>
+                  <base-spinner type="grow" color="primary" size="3"></base-spinner>
+                  <base-spinner type="grow" color="secondary" size="3"></base-spinner>
+                  <base-spinner type="grow" color="success" size="3"></base-spinner>
+                  <base-spinner type="grow" color="danger" size="3"></base-spinner>
+                  <base-spinner type="grow" color="warning" size="3"></base-spinner>
+                  <base-spinner type="grow" color="info" size="3"></base-spinner>
+                  <base-spinner type="grow" color="light" size="3"></base-spinner>
+                  <base-spinner type="grow" color="dark" size="3"></base-spinner>
+                </div>
               </div>
-              <div class="mb-2">
-                <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
+            </div>
+            <div class="mb-5">
+              <h4 class="mb-4">Modal</h4>
+              <div class="row">
+                <div class="col-md-3">
+                  <base-button color="primary" display="block" data-toggle="modal" data-target="#firstModal">
+                    Demo Modal
+                  </base-button>
+
+                  <base-modal target="firstModal">
+                    <base-modal-header>
+                      <h5 class="modal-title" >base-card</h5>
+                      <close-button dismiss="modal"></close-button>
+                    </base-modal-header>
+                    <base-modal-body>
+                      <div class="text-center" style="width:65%;margin-left:5rem;">
+                        <base-card >
+                          <img class="img-fluid" src="../assets/img/green.jpg" alt="">
+                          <base-card-body>
+                            <h4>Green</h4>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-primary">Go foo</button>
+                          </base-card-body>
+                        </base-card>
+                      </div>
+                    </base-modal-body>
+                  </base-modal>
+                </div>
+                <div class="col-md-3">
+                  <base-button color="danger" display="block" data-toggle="modal" data-target="#secondModal">
+                    Small Modal
+                  </base-button>
+
+                  <base-modal target="secondModal" size="sm">
+                    <base-modal-header>
+                      <h5 class="modal-title" >Spinner</h5>
+                      <close-button dismiss="modal"></close-button>
+                    </base-modal-header>
+                    <base-modal-body>
+                      <base-spinner type="grow" color="primary"></base-spinner>
+                      <base-spinner type="grow" color="secondary"></base-spinner>
+                      <base-spinner type="grow" color="info"></base-spinner>
+                      <base-spinner type="grow" color="danger" size="4"></base-spinner>
+                      <base-spinner type="grow" color="warning" ></base-spinner>
+                      <base-spinner type="grow" color="light"></base-spinner>
+                      <base-spinner type="grow" color="success"></base-spinner>
+                    </base-modal-body>
+                    <base-modal-footer>
+                      <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                    </base-modal-footer>
+                  </base-modal>
+                </div>
+                <div class="col-md-3">
+                  <base-button color="primary" display="block" data-toggle="modal" data-target="#thirdModal">
+                    Large Modal
+                  </base-button>
+
+                  <base-modal target="thirdModal" size="lg">
+                    <base-modal-header>
+                      <h5 class="modal-title" >Spinner</h5>
+                      <close-button dismiss="modal"></close-button>
+                    </base-modal-header>
+                    <base-modal-body>
+                      <base-spinner type="border" color="primary"></base-spinner>
+                      <base-spinner type="border" color="secondary"></base-spinner>
+                      <base-spinner type="border" color="success"></base-spinner>
+                      <base-spinner type="border" color="info"></base-spinner>
+                      <base-spinner type="border" color="danger"></base-spinner>
+                      <base-spinner type="border" color="warning"></base-spinner>
+                      <base-spinner type="border" color="light"></base-spinner>
+                      <base-spinner type="border" color="dark"></base-spinner>
+                    </base-modal-body>
+                    <base-modal-footer>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </base-modal-footer>
+                  </base-modal>
+                </div>
+                <div class="col-md-3">
+                  <base-button color="primary" display="block" data-toggle="modal" data-target="#forthModal">
+                    Extra large modal
+                  </base-button>
+
+                  <base-modal target="forthModal" size="xl">
+                    <base-modal-header>
+                      <h5 class="modal-title" >Modal header</h5>
+                      <close-button dismiss="modal"></close-button>
+                    </base-modal-header>
+                    <base-modal-body>
+                      <base-spinner size="3" color="primary" type="grow"></base-spinner>
+                      <base-spinner size="3"  color="secondary" type="grow"></base-spinner>
+                      <base-spinner size="3"  color="danger" type="grow"></base-spinner>
+                      <base-spinner size="5"  color="warning" type="border"></base-spinner>
+                      <base-spinner size="5"  color="success" type="border"></base-spinner>
+                      <base-spinner size="3"  color="info" type="grow"></base-spinner>
+                      <base-spinner size="3"  color="light" type="grow"></base-spinner>
+                      <base-spinner size="3"  color="dark" type="grow"></base-spinner>
+                    </base-modal-body>
+                    <base-modal-footer>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </base-modal-footer>
+                  </base-modal>
+                </div>
               </div>
-              <div class="mb-2">
-                <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
-              </div>
-              <div class="mb-2">
-                <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
-              </div>
+            </div>
+            <div class="mb-5">
+                <h4 class="mb-4">Alert</h4>
+<!--                <h5 class="mb-4">Light</h5>-->
+<!--                <base-alert color="primary" >-->
+<!--                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>-->
+<!--                  A simple primary alert—check it out!-->
+<!--                </base-alert>-->
+<!--                <base-alert color="secondary" >-->
+<!--                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>-->
+<!--                  A simple secondary alert—check it out!-->
+<!--                </base-alert>-->
+<!--                <base-alert color="info" >-->
+<!--                  A simple info alert—check it out!-->
+<!--                </base-alert>-->
+<!--                <base-alert color="danger" >-->
+<!--                  A simple info alert—check it out!-->
+<!--                </base-alert>-->
+<!--                <base-alert color="success" >-->
+<!--                  A simple success alert—check it out!-->
+<!--                </base-alert>-->
+<!--                <base-alert color="warning" >-->
+<!--                  A simple warning alert—check it out!-->
+<!--                </base-alert>-->
+
+<!--                <h5 class="mt-4">Dark</h5>-->
+                <base-alert color="primary" >
+                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
+                  A simple primary alert—check it out!
+                </base-alert>
+                <base-alert color="secondary" >
+                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
+                  A simple secondary alert—check it out!
+                </base-alert>
+                <base-alert color="info" >
+                  A simple info alert—check it out!
+                </base-alert>
+                <base-alert color="danger" >
+                  A simple info alert—check it out!
+                </base-alert>
+                <base-alert color="success" >
+                  A simple success alert—check it out!
+                </base-alert>
+                <base-alert color="warning" >
+                  A simple warning alert—check it out!
+                </base-alert>
             </div>
           </div>
         </div>

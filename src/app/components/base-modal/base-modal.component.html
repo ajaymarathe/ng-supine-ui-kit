@@ -1,3 +1,7 @@
-<p>
-  base-modal works!
-</p>
+<div [class]="'modal fade bd-example-modal-'+size" [id]="target" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div [class]="'modal-dialog modal-dialog-centered modal-'+size" role="document">
+    <div class="modal-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

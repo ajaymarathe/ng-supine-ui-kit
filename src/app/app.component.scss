@@ -34,3 +34,13 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
+//shapes
+.l-shapes{
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-transition: width 2s !important; /* Safari prior 6.1 */
+  transition-delay: 4s !important;
+}
+

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-base-modal-header',
+  selector: 'base-modal-header',
   templateUrl: './base-modal-header.component.html',
   styleUrls: ['./base-modal-header.component.css']
 })

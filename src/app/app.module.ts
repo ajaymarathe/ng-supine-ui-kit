@@ -18,6 +18,13 @@ import { BaseCarouselInnerComponent } from './components/base-carousel/base-caro
 import { BaseSlideIndicatorComponent } from './components/base-carousel/base-slide-indicator/base-slide-indicator.component';
 import { BaseCarouselCaptionComponent } from './components/base-carousel/base-carousel-caption/base-carousel-caption.component';
 import { BaseProgressComponent } from './components/base-progress/base-progress.component';
+import { BaseSpinnerComponent } from './components/base-spinner/base-spinner.component';
+import { BaseModalComponent } from './components/base-modal/base-modal.component';
+import { BaseModalHeaderComponent } from './components/base-modal/base-modal-header/base-modal-header.component';
+import { BaseModalBodyComponent } from './components/base-modal/base-modal-body/base-modal-body.component';
+import { BaseModalFooterComponent } from './components/base-modal/base-modal-footer/base-modal-footer.component';
+import { CloseButtonComponent } from './components/close-button/close-button.component';
+import { BaseAlertComponent } from './components/base-alert/base-alert.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,14 @@ import { BaseProgressComponent } from './components/base-progress/base-progress.
     BaseCarouselInnerComponent,
     BaseSlideIndicatorComponent,
     BaseCarouselCaptionComponent,
-    BaseProgressComponent
+    BaseProgressComponent,
+    BaseSpinnerComponent,
+    BaseModalComponent,
+    BaseModalHeaderComponent,
+    BaseModalBodyComponent,
+    BaseModalFooterComponent,
+    CloseButtonComponent,
+    BaseAlertComponent
   ],
   imports: [
     BrowserModule,

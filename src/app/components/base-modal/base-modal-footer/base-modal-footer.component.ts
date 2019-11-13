@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-base-modal-footer',
+  selector: 'base-modal-footer',
   templateUrl: './base-modal-footer.component.html',
   styleUrls: ['./base-modal-footer.component.css']
 })
