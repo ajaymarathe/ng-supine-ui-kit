@@ -7,15 +7,29 @@
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <ng-fontawesome class="text-white" icon="angle-double-down"></ng-fontawesome>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Components </a>
+            <base-dropdown>
+                <a class="nav-link" data-toggle="dropdown" >Components</a>
+              <base-dropdown-menu>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </base-dropdown-menu>
+            </base-dropdown>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Examples </a>
+          <base-dropdown>
+            <a class="nav-link" data-toggle="dropdown" >Pages</a>
+            <base-dropdown-menu>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </base-dropdown-menu>
+          </base-dropdown>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -37,14 +51,16 @@
             Source.
           </p>
           <div>
-            <button class="btn btn-outline-secondary">
-              <ng-fontawesome icon="download"></ng-fontawesome>
-              Download
-            </button>
-            <button class="btn btn-outline-light" style="width:137px;">
-              <ng-fontawesome icon="github"></ng-fontawesome>
-              Github
-            </button>
+                <base-button color="dark border border-light">
+                  <ng-fontawesome icon="download"></ng-fontawesome>
+                  Download
+                </base-button>
+              <div class="d-inline-block mobile_media" style="width:137px;">
+                <base-button color="light" display="block">
+                  <ng-fontawesome icon="github"></ng-fontawesome>
+                  Github
+                </base-button>
+              </div>
           </div>
         </div>
       </div>
@@ -418,56 +434,68 @@
           </div>
           <div class="col-md-12 mb-5">
             <h5 class="mb-4">pick your color</h5>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="primary">primary</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="secondary">secondary</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="danger">danger</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="warning">warning</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="info">info</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="success">success</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="light">light</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="dark">dark</base-button>
             </div>
           </div>
           <div class="col-md-12 mb-5">
             <h5 class="mb-4">Outline</h5>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-primary" >primary</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-secondary">secondary</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-danger">danger</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-warning">warning</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-info">info</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-success">success</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-light">light</base-button>
             </div>
-            <div class="mr-2 d-inline-block">
+            <div class="mr-2 mb-2 d-inline-block">
               <base-button color="outline-dark">dark</base-button>
+            </div>
+          </div>
+          <div class="col-md-12 mb-5">
+            <h5 class="mb-4">Choose your size</h5>
+            <div class="mr-2 d-inline-block">
+              <base-button size="sm" color="secondary">small</base-button>
+            </div>
+            <div class="mr-2 d-inline-block">
+              <base-button color="secondary">medium</base-button>
+            </div>
+            <div class="mr-2 d-inline-block">
+              <base-button size="lg" color="secondary">large</base-button>
             </div>
           </div>
           <div class="col-md-12 mb-5">
@@ -502,7 +530,7 @@
             </div>
             <h4 class="mb-4">Carousel</h4>
             <div class="row mb-5">
-              <div class="col-md-6">
+              <div class="col-md-6 mb-2">
                 <base-carousel target="carouselExampleControls">
                   <ol class="carousel-indicators" >
                     <base-slide-indicator target="carouselExampleControls" index="0"></base-slide-indicator>
@@ -520,11 +548,11 @@
                       <img src="../../../assets/img/green.jpg" class="d-block w-100" alt="...">
                     </div>
                   </base-carousel-inner>
-                    <base-carousel-indicator slide="next" target="carouselExampleControls"></base-carousel-indicator>
-                    <base-carousel-indicator slide="prev" target="carouselExampleControls"></base-carousel-indicator>
+                  <base-carousel-indicator slide="next" target="carouselExampleControls"></base-carousel-indicator>
+                  <base-carousel-indicator slide="prev" target="carouselExampleControls"></base-carousel-indicator>
                 </base-carousel>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-2">
                 <base-carousel target="secondCarousel">
                   <ol class="carousel-indicators" >
                     <base-slide-indicator target="secondCarousel" index="0"></base-slide-indicator>
@@ -561,26 +589,26 @@
             </div>
             <div class="mb-5">
               <h4 class="mb-4">Progress bar</h4>
-                <div class="mb-2">
-                  <base-progress width="20" height="0.2" ></base-progress>
-                </div>
-                <div class="mb-2">
-                  <base-progress color="info" width="30" height="0.5" ></base-progress>
-                </div>
-                <div class="mb-2">
-                  <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
-                </div>
-                <div class="mb-2">
-                  <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
-                </div>
-                <div class="mb-2">
-                  <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
-                </div>
+              <div class="mb-2">
+                <base-progress width="20" height="0.2" ></base-progress>
               </div>
+              <div class="mb-2">
+                <base-progress color="info" width="30" height="0.5" ></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
+              </div>
+              <div class="mb-2">
+                <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
+              </div>
+            </div>
             <div class="mb-5">
               <h4 class="mb-4">Spinner</h4>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <h5 class="mb-4">Border</h5>
                   <base-spinner type="border" color="primary" size="3"></base-spinner>
                   <base-spinner type="border" color="secondary" size="3"></base-spinner>
@@ -591,7 +619,7 @@
                   <base-spinner type="border" color="light" size="3"></base-spinner>
                   <base-spinner type="border" color="dark" size="3"></base-spinner>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <h5 class="mb-4">grow</h5>
                   <base-spinner type="grow" color="primary" size="3"></base-spinner>
                   <base-spinner type="grow" color="secondary" size="3"></base-spinner>
@@ -611,7 +639,6 @@
                   <base-button color="primary" display="block" data-toggle="modal" data-target="#firstModal">
                     Demo Modal
                   </base-button>
-
                   <base-modal target="firstModal">
                     <base-modal-header>
                       <h5 class="modal-title" >Spinner</h5>
@@ -626,18 +653,17 @@
                       <base-spinner type="border" color="warning"></base-spinner>
                       <base-spinner type="border" color="light"></base-spinner>
                       <base-spinner type="border" color="dark"></base-spinner>
-                    </base-modal-body>'
+                    </base-modal-body>
                     <base-modal-footer>
-                      <base-button color="warning" data-dismiss="modal">Close</base-button>
+                      <base-button color="secondary" data-dismiss="modal">Close</base-button>
                       <base-button color="primary">Save changes</base-button>
                     </base-modal-footer>
                   </base-modal>
                 </div>
                 <div class="col-md-3">
-                  <base-button color="danger" display="block" data-toggle="modal" data-target="#secondModal">
+                  <base-button color="secondary" display="block" data-toggle="modal" data-target="#secondModal">
                     Small Modal
                   </base-button>
-
                   <base-modal target="secondModal" size="sm">
                     <base-modal-header>
                       <h5 class="modal-title" >Spinner</h5>
@@ -659,10 +685,9 @@
                   </base-modal>
                 </div>
                 <div class="col-md-3">
-                  <base-button color="primary" display="block" data-toggle="modal" data-target="#thirdModal">
+                  <base-button color="warning" display="block" data-toggle="modal" data-target="#thirdModal">
                     Large Modal
                   </base-button>
-
                   <base-modal target="thirdModal" size="lg">
                     <base-modal-header>
                       <h5 class="modal-title" >Spinner</h5>
@@ -685,10 +710,9 @@
                   </base-modal>
                 </div>
                 <div class="col-md-3">
-                  <base-button color="primary" display="block" data-toggle="modal" data-target="#forthModal">
+                  <base-button color="light" display="block" data-toggle="modal" data-target="#forthModal">
                     Extra large modal
                   </base-button>
-
                   <base-modal target="forthModal" size="xl">
                     <base-modal-header>
                       <h5 class="modal-title" >Modal header</h5>
@@ -715,19 +739,19 @@
             <div class="mb-5">
               <h4 class="mb-4 mt-5 text-uppercase">Images </h4>
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                   <h6 class="mb-4 text-uppercase">Rounded</h6>
                   <img class='img-fluid rounded' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                   <h6 class="mb-4 text-uppercase">Circle</h6>
                   <img class='img-fluid rounded-circle' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                   <h6 class="mb-4 text-uppercase">Thumbnail</h6>
                   <img class='img-fluid img-thumbnail' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                   <h6 class="mb-4 text-uppercase">Square-shadow</h6>
                   <img class='img-fluid rounded-0 shadow' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
                 </div>
@@ -799,50 +823,27 @@
               </div>
             </div>
             <div class="mb-5">
-                <h4 class="mb-4">Alert</h4>
-<!--                <h5 class="mb-4">Light</h5>-->
-<!--                <base-alert color="primary" >-->
-<!--                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>-->
-<!--                  A simple primary alert—check it out!-->
-<!--                </base-alert>-->
-<!--                <base-alert color="secondary" >-->
-<!--                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>-->
-<!--                  A simple secondary alert—check it out!-->
-<!--                </base-alert>-->
-<!--                <base-alert color="info" >-->
-<!--                  A simple info alert—check it out!-->
-<!--                </base-alert>-->
-<!--                <base-alert color="danger" >-->
-<!--                  A simple info alert—check it out!-->
-<!--                </base-alert>-->
-<!--                <base-alert color="success" >-->
-<!--                  A simple success alert—check it out!-->
-<!--                </base-alert>-->
-<!--                <base-alert color="warning" >-->
-<!--                  A simple warning alert—check it out!-->
-<!--                </base-alert>-->
-
-<!--                <h5 class="mt-4">Dark</h5>-->
-                <base-alert color="primary" >
-                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
-                  A simple primary alert—check it out!
-                </base-alert>
-                <base-alert color="secondary" >
-                  <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
-                  A simple secondary alert—check it out!
-                </base-alert>
-                <base-alert color="info" >
-                  A simple info alert—check it out!
-                </base-alert>
-                <base-alert color="danger" >
-                  A simple info alert—check it out!
-                </base-alert>
-                <base-alert color="success" >
-                  A simple success alert—check it out!
-                </base-alert>
-                <base-alert color="warning" >
-                  A simple warning alert—check it out!
-                </base-alert>
+              <h4 class="mb-4">Alert</h4>
+              <base-alert color="primary" >
+                <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
+                A simple primary alert—check it out!
+              </base-alert>
+              <base-alert color="secondary" >
+                <ng-fontawesome class="mr-2" icon="send"></ng-fontawesome>
+                A simple secondary alert—check it out!
+              </base-alert>
+              <base-alert color="info" >
+                A simple info alert—check it out!
+              </base-alert>
+              <base-alert color="danger" >
+                A simple info alert—check it out!
+              </base-alert>
+              <base-alert color="success" >
+                A simple success alert—check it out!
+              </base-alert>
+              <base-alert color="warning" >
+                A simple warning alert—check it out!
+              </base-alert>
               <base-alert color="success" >
                 <h4 class="alert-heading">Well done!</h4>
                 <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -872,16 +873,13 @@
                   <button id="button" type="button" class="btn btn-secondary mr-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on top
                   </button>
-
                   <button type="button" class="btn btn-secondary mr-2" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on right
                   </button>
-
                   <button type="button" class="btn btn-secondary mr-2" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
+                              sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on bottom
                   </button>
-
                   <button type="button" class="btn btn-secondary mr-2" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on left
                   </button>
@@ -891,7 +889,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
             <div class="mb-5">
               <h4 class="mb-4">Tabs</h4>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="bg-light p-3">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">
@@ -920,7 +918,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="bg-light p-3">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">
@@ -933,7 +931,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
                       </li>
                     </ul>
-
                     <div class="tab-content mt-2" id="myTabContent">
                       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <p class="lead">Home</p>
@@ -948,6 +945,80 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h4 class="mb-4">forms</h4>
+              <div class="row">
+                <div class="col-md-4 ">
+                  <div class="form-group">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control border border-success" aria-describedby="emailHelp" placeholder="success">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control border border-danger" aria-describedby="emailHelp" placeholder="danger">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="disabled" disabled>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                       <span class="input-group-text" id="basic-addon1">
+                          <ng-fontawesome icon="search"></ng-fontawesome>
+                       </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+              <h4 class="mb-4">Checkboxes & Radio</h4>
+              <div class="row mb-4">
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" checked>
+                    <label class="form-check-label" for="defaultCheck1">
+                      Default checkbox
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
                   </div>
                 </div>
               </div>
@@ -1005,7 +1076,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                       <h6>NG-SUPINE</h6>
                     </div>
                   </div>
-
                 </div>
                 <div class="col-md-12">
                   <h6 class="mb-4 text-uppercase">Display</h6>
@@ -1041,7 +1111,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                       <h1 class="display-4 text-uppercase">NG-SUPINE</h1>
                     </div>
                   </div>
-
                   <h6 class="text-uppercase mt-5 mb-4">Fancy display</h6>
                   <h3>
                     Fancy display heading
@@ -1080,10 +1149,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                   <p class="text-white-50 bg-dark">.text-white-50</p>
                 </div>
               </div>
-
-
             </div>
-
           </div>
         </div>
       </div>
@@ -1097,7 +1163,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
             <ng-fontawesome class="text-light mb-4" size="3" icon="send"></ng-fontawesome>
             <h2 class="text-uppercase text-light mb-4">ng-fontawesome-icon</h2>
             <p class="lead mb-4">There are 675 icons in Font Awesome 4.7.0, easy to use. Which look awesome with Slatblue-UI,
-              Make sure to read docs first.</p>
+              Make sure to read docs first.
+            </p>
             <div>
               <a target="_blank" href="https://fontawesome.com/v4.7.0/icons/">
                 <base-button color="dark">View icons</base-button>
@@ -1115,7 +1182,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
         <div class="col-md-6">
           <h2 class="text-uppercase mt-5 mb-4">NG-SUPINE Awesome Design System</h2>
           <p class="lead mb-4">NG-SUPINE Design system comes with login and register page to help you get started, also it has it's own
-            beautiful documentation to help you out. It is based on <a href="http://www.bootcatch.com/slateblue/alerts" target="_blank">Slateblue Theme</a>. Which is based on Bootstrap 4.3.</p>
+            beautiful documentation to help you out. It is based on <a href="http://www.bootcatch.com/slateblue/alerts" target="_blank">Slateblue Theme</a>. Which is based on Bootstrap 4.3.
+          </p>
           <base-button color="primary">
             See all components
           </base-button>
@@ -1127,7 +1195,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
               <base-card-body>
                 <h5 class="card-title">base-card-component</h5>
                 <p class="card-text">Some quick example text to build on the card title and
-                  make up the bulk of the card's content.</p>
+                  make up the bulk of the card's content.
+                </p>
               </base-card-body>
             </base-card>
           </div>

@@ -1,13 +1,12 @@
 .first-section{
-    // height: 100vh;
     .intro{
         color: white;
-        // margin-top: 4rem;
-        // margin-bottom: 4rem;
     }
     button{
         text-transform: uppercase;
     }
+  background-image: url(http://bootcatch.com/img/overlay.svg);
+  background-size: cover;
 }
 .navbar-transparent {
     position: absolute;
@@ -40,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
   -webkit-transform: rotate(5deg);
   -webkit-transform-origin: 0;
   transform-origin: 0;
-  -webkit-transition: width 2s !important; /* Safari prior 6.1 */
+  -webkit-transition: width 2s !important;
   transition-delay: 4s !important;
 }
 .btn{
@@ -68,3 +67,12 @@ h1,h2,h3,h4,h5,h6{
   background-color: #172B4E;
   border-color: #dee2e6 #dee2e6 #fff;
 }
+
+//media query for small devices
+@media only screen and (max-width: 768px) {
+  .mobile_media {
+    margin-top: 1px;
+  }
+}
+
+

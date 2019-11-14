@@ -9,6 +9,7 @@ export class BaseButtonComponent implements OnInit {
   @Input() color: string;
   @Input() type: string;
   @Input() display: string;
+  @Input() size: string;
   constructor() { }
 
   ngOnInit() {
