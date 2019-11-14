@@ -50,7 +50,7 @@ import { BaseAlertComponent } from './components/base-alert/base-alert.component
     BaseModalBodyComponent,
     BaseModalFooterComponent,
     CloseButtonComponent,
-    BaseAlertComponent
+    BaseAlertComponent,
   ],
   imports: [
     BrowserModule,

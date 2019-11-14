@@ -61,3 +61,10 @@ h1,h2,h3,h4,h5,h6{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+//nav tabs
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  color: white;
+  background-color: #172B4E;
+  border-color: #dee2e6 #dee2e6 #fff;
+}

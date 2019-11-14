@@ -614,21 +614,23 @@
 
                   <base-modal target="firstModal">
                     <base-modal-header>
-                      <h5 class="modal-title" >base-card</h5>
+                      <h5 class="modal-title" >Spinner</h5>
                       <close-button dismiss="modal"></close-button>
                     </base-modal-header>
                     <base-modal-body>
-                      <div class="text-center" style="width:65%;margin-left:5rem;">
-                        <base-card >
-                          <img class="img-fluid" src="../assets/img/green.jpg" alt="">
-                          <base-card-body>
-                            <h4>Green</h4>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="btn btn-primary">Go foo</button>
-                          </base-card-body>
-                        </base-card>
-                      </div>
-                    </base-modal-body>
+                      <base-spinner type="border" color="primary"></base-spinner>
+                      <base-spinner type="border" color="secondary"></base-spinner>
+                      <base-spinner type="border" color="success"></base-spinner>
+                      <base-spinner type="border" color="info" size="4"></base-spinner>
+                      <base-spinner type="border" color="danger" size="4"></base-spinner>
+                      <base-spinner type="border" color="warning"></base-spinner>
+                      <base-spinner type="border" color="light"></base-spinner>
+                      <base-spinner type="border" color="dark"></base-spinner>
+                    </base-modal-body>'
+                    <base-modal-footer>
+                      <base-button color="warning" data-dismiss="modal">Close</base-button>
+                      <base-button color="primary">Save changes</base-button>
+                    </base-modal-footer>
                   </base-modal>
                 </div>
                 <div class="col-md-3">
@@ -670,8 +672,8 @@
                       <base-spinner type="border" color="primary"></base-spinner>
                       <base-spinner type="border" color="secondary"></base-spinner>
                       <base-spinner type="border" color="success"></base-spinner>
-                      <base-spinner type="border" color="info"></base-spinner>
-                      <base-spinner type="border" color="danger"></base-spinner>
+                      <base-spinner type="border" color="info" size="4"></base-spinner>
+                      <base-spinner type="border" color="danger" size="4"></base-spinner>
                       <base-spinner type="border" color="warning"></base-spinner>
                       <base-spinner type="border" color="light"></base-spinner>
                       <base-spinner type="border" color="dark"></base-spinner>
@@ -707,6 +709,92 @@
                       <button type="button" class="btn btn-primary">Save changes</button>
                     </base-modal-footer>
                   </base-modal>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h4 class="mb-4 mt-5 text-uppercase">Images </h4>
+              <div class="row">
+                <div class="col-md-3">
+                  <h6 class="mb-4 text-uppercase">Rounded</h6>
+                  <img class='img-fluid rounded' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="mb-4 text-uppercase">Circle</h6>
+                  <img class='img-fluid rounded-circle' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="mb-4 text-uppercase">Thumbnail</h6>
+                  <img class='img-fluid img-thumbnail' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="mb-4 text-uppercase">Square-shadow</h6>
+                  <img class='img-fluid rounded-0 shadow' src="../assets/img/kajal800.png" alt="vue slateblue-ui images">
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h4 class="mb-4 text-uppercase">Pagination</h4>
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="mb-4 text-uppercase">Small</h6>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="mb-4 text-uppercase">medium</h6>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="mb-4 text-uppercase">large</h6>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-lg">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -797,6 +885,70 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                   <button type="button" class="btn btn-secondary mr-2" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on left
                   </button>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h4 class="mb-4">Tabs</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="bg-light p-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#school" role="tab" aria-controls="home" aria-selected="true">school</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#college" role="tab" aria-controls="profile" aria-selected="false">college</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#city" role="tab" aria-controls="contact" aria-selected="false">city</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content mt-2" id="myTabContent">
+                      <div class="tab-pane fade show active" id="school" role="tabpanel" aria-labelledby="home-tab">
+                        <p class="lead">School</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                      <div class="tab-pane fade" id="college" role="tabpanel" aria-labelledby="profile-tab">
+                        <p class="lead">college</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                      <div class="tab-pane fade" id="city" role="tabpanel" aria-labelledby="contact-tab">
+                        <p class="lead">City</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="bg-light p-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content mt-2" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p class="lead">Home</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p class="lead">profile</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <p class="lead">contact</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dicta distinctio esse exercitationem facere fuga fugiat ipsam ipsum nobis odit officia, pariatur repellendus sapiente temporibus totam velit voluptas?</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1006,7 +1158,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" target="_blank" href="https://github.com/ajaymarathe/vue-slateblue-ui/blob/master/LICENSE">
+        <a class="nav-link" target="_blank" href="https://github.com/ajaymarathe/ng-supine-ui-kit/blob/master/LICENSE">
           MIT License
         </a>
       </li>
