@@ -10,7 +10,7 @@ export class AppComponent  implements OnInit {
   title = 'ng-supine';
 
   ngOnInit() {
-    this.EnablePopOver();
+    this.EnableTooltip();
     this.EnablePopOver();
   }
 
