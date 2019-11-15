@@ -25,6 +25,10 @@ import { BaseModalBodyComponent } from './components/base-modal/base-modal-body/
 import { BaseModalFooterComponent } from './components/base-modal/base-modal-footer/base-modal-footer.component';
 import { CloseButtonComponent } from './components/close-button/close-button.component';
 import { BaseAlertComponent } from './components/base-alert/base-alert.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RegsiterComponent } from './regsiter/regsiter.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -51,10 +55,14 @@ import { BaseAlertComponent } from './components/base-alert/base-alert.component
     BaseModalFooterComponent,
     CloseButtonComponent,
     BaseAlertComponent,
+    RegsiterComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    NgFontawesomeModule
+    NgFontawesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
