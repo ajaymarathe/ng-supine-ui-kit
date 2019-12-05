@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+
+/*fontawesome icon module*/
 import { NgFontawesomeModule } from 'ng-fontawesome-icon';
 
-import { AppComponent } from './app.component';
+/* custom components*/
 import { BaseNavbarComponent } from './components/base-navbar/base-navbar.component';
 import { BaseCardComponent } from './components/base-card/base-card.component';
 import { BaseCardBodyComponent } from './components/base-card/base-card-body/base-card-body.component';
@@ -25,7 +28,11 @@ import { BaseModalBodyComponent } from './components/base-modal/base-modal-body/
 import { BaseModalFooterComponent } from './components/base-modal/base-modal-footer/base-modal-footer.component';
 import { CloseButtonComponent } from './components/close-button/close-button.component';
 import { BaseAlertComponent } from './components/base-alert/base-alert.component';
+
+/* routing module*/
 import { AppRoutingModule } from './app-routing.module';
+
+/*pages */
 import { RegsiterComponent } from './regsiter/regsiter.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';

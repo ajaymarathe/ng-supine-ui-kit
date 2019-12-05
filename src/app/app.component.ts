@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+/*use jquery $ */
 declare var $;
 
 @Component({
@@ -7,20 +8,21 @@ declare var $;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  implements OnInit {
-  title = 'ng-supine';
+  title = 'ng-supine-ui-kit';
 
   ngOnInit() {
     this.EnableTooltip();
     this.EnablePopOver();
   }
 
-
+/*Enable boostrap Tooltip*/
   EnableTooltip(){
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
   }
 
+  /*Enable Popover*/
   EnablePopOver(){
     $(function () {
       $('[data-toggle="popover"]').popover();

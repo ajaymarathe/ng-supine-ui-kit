@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./base-card-header.component.css']
 })
 export class BaseCardHeaderComponent implements OnInit {
-  @Input() ExtraClass: string;
   constructor() { }
 
   ngOnInit() {
