@@ -13,27 +13,38 @@
         <li class="nav-item active">
           <base-dropdown>
             <a class="nav-link" data-toggle="dropdown" >Components</a>
-            <base-dropdown-menu>
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </base-dropdown-menu>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item text-wrap d-flex justify-content-between align-items-start" href="#">
+                <ng-fontawesome class="mr-3 text-primary" icon="telegram" size="2.5"></ng-fontawesome>
+                <div>
+                  <h6 class="text-capitalize">Getting Started</h6>
+                  <p class="text-light-blue">Learn how to use this UI-Kit, let's go to doc and learn.</p>
+                </div>
+              </a>
+              <a class="dropdown-item text-wrap d-flex justify-content-between align-items-start" href="#">
+                <ng-fontawesome class="mr-3" icon="bolt" size="2.5"></ng-fontawesome>
+               <div>
+                 <h6 class="text-capitalize">Components</h6>
+                 <p class="text-light-blue">Get 50+ Handy components for free use.</p>
+               </div>
+              </a>
+
+            </div>
           </base-dropdown>
         </li>
         <li class="nav-item active">
           <base-dropdown>
             <a class="nav-link" data-toggle="dropdown" >Pages</a>
-            <base-dropdown-menu>
+            <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
               <a routerLink="login" class="dropdown-item" >Login</a>
               <a routerLink="register" class="dropdown-item" >Register</a>
-              <a class="dropdown-item" >Something else here</a>
-            </base-dropdown-menu>
+            </div>
           </base-dropdown>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="btn btn-outline-light btn-sm" href="#">Download </a>
+          <a class="btn btn-outline-light btn-sm" href="https://github.com/ajaymarathe/ng-supine-ui-kit/archive/master.zip" >Download </a>
         </li>
       </ul>
     </div>
@@ -51,14 +62,14 @@
           </p>
           <div>
             <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-outline-light">
+              <a href="https://github.com/ajaymarathe/ng-supine-ui-kit/archive/master.zip" class="btn btn-outline-light">
                 <ng-fontawesome icon="download"></ng-fontawesome>
                 Download
-              </button>
-              <button type="button" class="btn btn-light"  style="width:137px;">
+              </a>
+              <a href="https://github.com/ajaymarathe/ng-supine-ui-kit" target="_blank" class="btn btn-light"  style="width:137px;">
                 <ng-fontawesome icon="github" size="1.2"></ng-fontawesome>
                 Github
-              </button>
+              </a>
             </div>
           </div>
         </div>
