@@ -1,10 +1,10 @@
 /*login screeen*/
-/*login screeen*/
 .login-screen{
   background-image: url("../../assets/img/green.jpg");
   background-size: cover;
   height: 100vh;
 }
+
 /*overlay*/
   .black-overlay{
     width: 100%;

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+
 /*use jquery $ */
 declare var $;
 
@@ -8,7 +9,8 @@ declare var $;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  implements OnInit {
-  title = 'ng-supine-ui-kit';
+
+  title = 'ng-supine-design-system';
 
   ngOnInit() {
     this.EnableTooltip();
