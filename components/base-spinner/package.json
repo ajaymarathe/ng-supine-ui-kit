@@ -1,0 +1,21 @@
+{
+  "name": "base-spinner",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-spinner.umd.js",
+  "module": "fesm5/base-spinner.js",
+  "es2015": "fesm2015/base-spinner.js",
+  "esm5": "esm5/base-spinner.js",
+  "esm2015": "esm2015/base-spinner.js",
+  "fesm5": "fesm5/base-spinner.js",
+  "fesm2015": "fesm2015/base-spinner.js",
+  "typings": "base-spinner.d.ts",
+  "metadata": "base-spinner.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

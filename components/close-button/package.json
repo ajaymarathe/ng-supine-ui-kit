@@ -1,0 +1,21 @@
+{
+  "name": "close-button",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/close-button.umd.js",
+  "module": "fesm5/close-button.js",
+  "es2015": "fesm2015/close-button.js",
+  "esm5": "esm5/close-button.js",
+  "esm2015": "esm2015/close-button.js",
+  "fesm5": "fesm5/close-button.js",
+  "fesm2015": "fesm2015/close-button.js",
+  "typings": "close-button.d.ts",
+  "metadata": "close-button.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

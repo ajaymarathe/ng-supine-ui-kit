@@ -1,0 +1,21 @@
+{
+  "name": "base-modal-footer",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-modal-footer.umd.js",
+  "module": "fesm5/base-modal-footer.js",
+  "es2015": "fesm2015/base-modal-footer.js",
+  "esm5": "esm5/base-modal-footer.js",
+  "esm2015": "esm2015/base-modal-footer.js",
+  "fesm5": "fesm5/base-modal-footer.js",
+  "fesm2015": "fesm2015/base-modal-footer.js",
+  "typings": "base-modal-footer.d.ts",
+  "metadata": "base-modal-footer.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

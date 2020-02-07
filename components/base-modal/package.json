@@ -1,0 +1,21 @@
+{
+  "name": "base-modal",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-modal.umd.js",
+  "module": "fesm5/base-modal.js",
+  "es2015": "fesm2015/base-modal.js",
+  "esm5": "esm5/base-modal.js",
+  "esm2015": "esm2015/base-modal.js",
+  "fesm5": "fesm5/base-modal.js",
+  "fesm2015": "fesm2015/base-modal.js",
+  "typings": "base-modal.d.ts",
+  "metadata": "base-modal.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

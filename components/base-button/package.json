@@ -1,0 +1,21 @@
+{
+  "name": "base-button",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-button.umd.js",
+  "module": "fesm5/base-button.js",
+  "es2015": "fesm2015/base-button.js",
+  "esm5": "esm5/base-button.js",
+  "esm2015": "esm2015/base-button.js",
+  "fesm5": "fesm5/base-button.js",
+  "fesm2015": "fesm2015/base-button.js",
+  "typings": "base-button.d.ts",
+  "metadata": "base-button.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

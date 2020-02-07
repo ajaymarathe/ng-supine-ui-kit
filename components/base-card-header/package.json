@@ -1,0 +1,21 @@
+{
+  "name": "base-card-header",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-card-header.umd.js",
+  "module": "fesm5/base-card-header.js",
+  "es2015": "fesm2015/base-card-header.js",
+  "esm5": "esm5/base-card-header.js",
+  "esm2015": "esm2015/base-card-header.js",
+  "fesm5": "fesm5/base-card-header.js",
+  "fesm2015": "fesm2015/base-card-header.js",
+  "typings": "base-card-header.d.ts",
+  "metadata": "base-card-header.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

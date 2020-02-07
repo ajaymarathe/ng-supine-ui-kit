@@ -1,55 +1,37 @@
 {
   "name": "ng-supine-design-system",
-  "version": "0.0.0",
+  "version": "0.0.4",
+  "description": "NG Supine Design System is Coded, Written & Published By Bootcatch Based on Angular & Bootstrap 4.x ( Bootcatch-themes ).",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^6.1.0",
-    "@angular/common": "^6.1.0",
-    "@angular/compiler": "^6.1.0",
-    "@angular/core": "^6.1.0",
-    "@angular/forms": "^6.1.0",
-    "@angular/http": "^6.1.0",
-    "@angular/platform-browser": "^6.1.0",
-    "@angular/platform-browser-dynamic": "^6.1.0",
-    "@angular/router": "^6.1.0",
-    "bootcatch-themes": "^1.8.0",
-    "bootstrap": "^4.3.1",
-    "core-js": "^2.5.4",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
-    "ng-fontawesome-icon": "^1.0.0",
-    "node-sass": "^4.13.0",
-    "popper.js": "^1.16.0",
-    "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaymarathe/ng-supine-ui-kit.git"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.8.0",
-    "@angular/cli": "~6.2.1",
-    "@angular/compiler-cli": "^6.1.0",
-    "@angular/language-service": "^6.1.0",
-    "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "codelyzer": "~4.3.0",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~3.0.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
-    "typescript": "~2.9.2"
-  }
+  "keywords": [
+    "angular8",
+    "angular",
+    "angular-components",
+    "ng-supine-design-system",
+    "angular-bootstrap",
+    "bootstrap4",
+    "angular-uikit",
+    "angular-bootstrap-uikit",
+    "free",
+    "uikit",
+    "uikit-components",
+    "supine-uikit",
+    "angular-design-system",
+    "design-system",
+    "bootstrap-design-system",
+    "supine-bootstrap-theme"
+  ],
+  "author": "Ajay Marathe <0107amar@gmail.com> (http://bootcatch.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaymarathe/ng-supine-ui-kit/issues"
+  },
+  "homepage": "https://github.com/ajaymarathe/ng-supine-ui-kit#readme"
 }

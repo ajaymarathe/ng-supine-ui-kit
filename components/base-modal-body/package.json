@@ -1,0 +1,21 @@
+{
+  "name": "base-modal-body",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/base-modal-body.umd.js",
+  "module": "fesm5/base-modal-body.js",
+  "es2015": "fesm2015/base-modal-body.js",
+  "esm5": "esm5/base-modal-body.js",
+  "esm2015": "esm2015/base-modal-body.js",
+  "fesm5": "fesm5/base-modal-body.js",
+  "fesm2015": "fesm2015/base-modal-body.js",
+  "typings": "base-modal-body.d.ts",
+  "metadata": "base-modal-body.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
