@@ -1,7 +1,7 @@
 # NG Supine Design System
 NG Supine Design System is  is Coded, Written & Published By Bootcatch, Based on Angular & Bootstrap 4.x ( Bootcatch-themes ).
 
-[![NPM](https://img.shields.io/npm/v/ng-apollo-design-system.svg)](https://www.npmjs.com/package/ng-supine-design-system)  [![NPM](https://img.shields.io/npm/dt/ng-apollo-design-system.svg)](https://www.npmjs.com/package/ng-supine-design-system) 
+[![NPM](https://img.shields.io/npm/v/ng-supine-design-system.svg)](https://www.npmjs.com/package/ng-supine-design-system)  [![NPM](https://img.shields.io/npm/dt/ng-supine-design-system.svg)](https://www.npmjs.com/package/ng-supine-design-system) 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
@@ -18,7 +18,7 @@ NG Supine Design System is  is Coded, Written & Published By Bootcatch, Based on
 The Documentation for NG-APOLLO DESIGN SYSTEM is hosted on [Bootcatch-blog](http://blog.bootcatch.com/post/angular-components-based-design-system-is-based-on-bootcatch-themes-and-angular).
 
 ## First Shot
-[![card-blog](https://raw.githubusercontent.com/ajaymarathe/image-store/master/ng-uikit/ng-apollo.png)](http://preview.bootcatch.com/ng-supine-design-system)
+[![card-blog](https://raw.githubusercontent.com/ajaymarathe/image-store/master/ng-uikit/ng-supine.png)](http://preview.bootcatch.com/ng-supine-design-system)
 
 ## Quick Start
 ```
@@ -62,6 +62,6 @@ If you like my work then please give ⭐ and do follow me :P
 
 ## Copyright and License
 
-Copyright 2019-2020 [Ajay Marathe](https://github.com/ajaymarathe). Code released under the [MIT](https://github.com/ajaymarathe/ng-apollo-design-system/blob/master/LICENSE) license.
+Copyright 2019-2020 [Ajay Marathe](https://github.com/ajaymarathe). Code released under the [MIT](https://github.com/ajaymarathe/ng-supine-ui-kit/blob/master/LICENSE) license.
 
 

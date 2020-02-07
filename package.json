@@ -1,6 +1,6 @@
 {
   "name": "ng-supine-design-system",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NG Supine Design System is Coded, Written & Published By Bootcatch Based on Angular & Bootstrap 4.x ( Bootcatch-themes ).",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "supine-uikit",
     "angular-design-system",
     "design-system",
+    "angular-design-system",
     "bootstrap-design-system",
     "supine-bootstrap-theme"
   ],
